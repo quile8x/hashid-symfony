@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\Reflection;
+namespace Techgrid\HashIdBundle\Reflection;
 
-use Pgs\HashIdBundle\Exception\MissingClassOrMethodException;
+use Techgrid\HashIdBundle\Exception\MissingClassOrMethodException;
 use ReflectionException;
 use ReflectionMethod;
 

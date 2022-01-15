@@ -1,8 +1,8 @@
 <?php
 
-namespace Pgs\HashIdBundle\Controller;
+namespace Techgrid\HashIdBundle\Controller;
 
-use Pgs\HashIdBundle\Annotation\Hash;
+use Techgrid\HashIdBundle\Annotation\Hash;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

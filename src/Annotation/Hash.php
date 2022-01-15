@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\Annotation;
+namespace Techgrid\HashIdBundle\Annotation;
 
 /**
  * @Annotation

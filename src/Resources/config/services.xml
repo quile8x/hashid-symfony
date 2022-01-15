@@ -5,66 +5,66 @@
         https://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="pgs_hash_id.decorator.router"
-                 class="Pgs\HashIdBundle\Decorator\RouterDecorator"
+        <service id="techgrid_hash_id.decorator.router"
+                 class="Techgrid\HashIdBundle\Decorator\RouterDecorator"
                  public="false"
                  decorates="router">
             <argument type="service" id="router.default"/>
-            <argument type="service" id="pgs_hash_id.parameters_processor.factory.encode"/>
+            <argument type="service" id="techgrid_hash_id.parameters_processor.factory.encode"/>
         </service>
-        <service id="pgs_hash_id.reflection_provider"
-                 class="Pgs\HashIdBundle\Reflection\ReflectionProvider"
+        <service id="techgrid_hash_id.reflection_provider"
+                 class="Techgrid\HashIdBundle\Reflection\ReflectionProvider"
                  public="false"/>
-        <service id="pgs_hash_id.annotation_provider"
-                 class="Pgs\HashIdBundle\AnnotationProvider\AnnotationProvider"
+        <service id="techgrid_hash_id.annotation_provider"
+                 class="Techgrid\HashIdBundle\AnnotationProvider\AnnotationProvider"
                  public="false">
             <argument type="service" id="annotation_reader"/>
-            <argument type="service" id="pgs_hash_id.reflection_provider"/>
+            <argument type="service" id="techgrid_hash_id.reflection_provider"/>
         </service>
-        <service id="pgs_hash_id.parameters_processor.abstract"
-                 class="Pgs\HashIdBundle\ParametersProcessor\AbstractParametersProcessor"
+        <service id="techgrid_hash_id.parameters_processor.abstract"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\AbstractParametersProcessor"
                  abstract="true"
                  public="false">
-            <argument type="service" id="pgs_hash_id.converter"/>
+            <argument type="service" id="techgrid_hash_id.converter"/>
         </service>
-        <service id="pgs_hash_id.parameters_processor.encode"
-                 class="Pgs\HashIdBundle\ParametersProcessor\Encode"
-                 parent="pgs_hash_id.parameters_processor.abstract"
+        <service id="techgrid_hash_id.parameters_processor.encode"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\Encode"
+                 parent="techgrid_hash_id.parameters_processor.abstract"
                  public="false"/>
-        <service id="pgs_hash_id.parameters_processor.decode"
-                 class="Pgs\HashIdBundle\ParametersProcessor\Decode"
-                 parent="pgs_hash_id.parameters_processor.abstract"
+        <service id="techgrid_hash_id.parameters_processor.decode"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\Decode"
+                 parent="techgrid_hash_id.parameters_processor.abstract"
                  public="false"/>
-        <service id="pgs_hash_id.parameters_processor.no_op"
-                 class="Pgs\HashIdBundle\ParametersProcessor\NoOp"
+        <service id="techgrid_hash_id.parameters_processor.no_op"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\NoOp"
                  public="false"/>
-        <service id="pgs_hash_id.parameters_processor.factory.abstract"
-                 class="Pgs\HashIdBundle\ParametersProcessor\Factory\AbstractParametersProcessorFactory"
+        <service id="techgrid_hash_id.parameters_processor.factory.abstract"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\Factory\AbstractParametersProcessorFactory"
                  abstract="true"
                  public="false">
-            <argument type="service" id="pgs_hash_id.annotation_provider"/>
-            <argument type="service" id="pgs_hash_id.parameters_processor.no_op"/>
+            <argument type="service" id="techgrid_hash_id.annotation_provider"/>
+            <argument type="service" id="techgrid_hash_id.parameters_processor.no_op"/>
         </service>
-        <service id="pgs_hash_id.parameters_processor.factory.encode"
-                 class="Pgs\HashIdBundle\ParametersProcessor\Factory\EncodeParametersProcessorFactory"
-                 parent="pgs_hash_id.parameters_processor.factory.abstract"
+        <service id="techgrid_hash_id.parameters_processor.factory.encode"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\Factory\EncodeParametersProcessorFactory"
+                 parent="techgrid_hash_id.parameters_processor.factory.abstract"
                  public="false">
-            <argument type="service" id="pgs_hash_id.parameters_processor.encode"/>
+            <argument type="service" id="techgrid_hash_id.parameters_processor.encode"/>
         </service>
-        <service id="pgs_hash_id.parameters_processor.factory.decode"
-                 class="Pgs\HashIdBundle\ParametersProcessor\Factory\DecodeParametersProcessorFactory"
-                 parent="pgs_hash_id.parameters_processor.factory.abstract"
+        <service id="techgrid_hash_id.parameters_processor.factory.decode"
+                 class="Techgrid\HashIdBundle\ParametersProcessor\Factory\DecodeParametersProcessorFactory"
+                 parent="techgrid_hash_id.parameters_processor.factory.abstract"
                  public="false">
-            <argument type="service" id="pgs_hash_id.parameters_processor.decode"/>
+            <argument type="service" id="techgrid_hash_id.parameters_processor.decode"/>
         </service>
-        <service id="pgs_hash_id.service.decode_controller_parameters"
-                 class="Pgs\HashIdBundle\Service\DecodeControllerParameters"
+        <service id="techgrid_hash_id.service.decode_controller_parameters"
+                 class="Techgrid\HashIdBundle\Service\DecodeControllerParameters"
                  public="false">
-            <argument type="service" id="pgs_hash_id.parameters_processor.factory.decode"/>
+            <argument type="service" id="techgrid_hash_id.parameters_processor.factory.decode"/>
         </service>
-        <service id="pgs_hash_id.event_subscriber.decode_controller_parameters"
-                 class="Pgs\HashIdBundle\EventSubscriber\DecodeControllerParametersSubscriber">
-            <argument type="service" id="pgs_hash_id.service.decode_controller_parameters"/>
+        <service id="techgrid_hash_id.event_subscriber.decode_controller_parameters"
+                 class="Techgrid\HashIdBundle\EventSubscriber\DecodeControllerParametersSubscriber">
+            <argument type="service" id="techgrid_hash_id.service.decode_controller_parameters"/>
             <tag name="kernel.event_subscriber"/>
         </service>
     </services>

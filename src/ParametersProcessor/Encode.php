@@ -1,6 +1,6 @@
 <?php
 
-namespace Pgs\HashIdBundle\ParametersProcessor;
+namespace Techgrid\HashIdBundle\ParametersProcessor;
 
 class Encode extends AbstractParametersProcessor
 {

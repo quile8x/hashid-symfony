@@ -1,9 +1,9 @@
 <?php
 
-namespace Pgs\HashIdBundle\DependencyInjection;
+namespace Techgrid\HashIdBundle\DependencyInjection;
 
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use Pgs\HashIdBundle\Annotation\Hash;
+use Techgrid\HashIdBundle\Annotation\Hash;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;

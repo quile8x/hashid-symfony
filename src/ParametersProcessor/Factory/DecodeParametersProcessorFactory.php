@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\ParametersProcessor\Factory;
+namespace Techgrid\HashIdBundle\ParametersProcessor\Factory;
 
-use Pgs\HashIdBundle\Annotation\Hash;
-use Pgs\HashIdBundle\AnnotationProvider\AnnotationProvider;
-use Pgs\HashIdBundle\Exception\InvalidControllerException;
-use Pgs\HashIdBundle\Exception\MissingClassOrMethodException;
-use Pgs\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
+use Techgrid\HashIdBundle\Annotation\Hash;
+use Techgrid\HashIdBundle\AnnotationProvider\AnnotationProvider;
+use Techgrid\HashIdBundle\Exception\InvalidControllerException;
+use Techgrid\HashIdBundle\Exception\MissingClassOrMethodException;
+use Techgrid\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
 
 class DecodeParametersProcessorFactory extends AbstractParametersProcessorFactory
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\ParametersProcessor\Factory;
+namespace Techgrid\HashIdBundle\ParametersProcessor\Factory;
 
-use Pgs\HashIdBundle\AnnotationProvider\AnnotationProvider;
-use Pgs\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
+use Techgrid\HashIdBundle\AnnotationProvider\AnnotationProvider;
+use Techgrid\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
 
 abstract class AbstractParametersProcessorFactory
 {

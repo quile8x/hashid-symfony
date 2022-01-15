@@ -1,9 +1,9 @@
 <?php
 
-namespace Pgs\HashIdBundle\DependencyInjection\Compiler;
+namespace Techgrid\HashIdBundle\DependencyInjection\Compiler;
 
 use Hashids\Hashids;
-use Pgs\HashIdBundle\ParametersProcessor\Converter\HashidsConverter;
+use Techgrid\HashIdBundle\ParametersProcessor\Converter\HashidsConverter;
 use Symfony\Component\DependencyInjection\Alias;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

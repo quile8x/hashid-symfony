@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\AnnotationProvider;
+namespace Techgrid\HashIdBundle\AnnotationProvider;
 
 use Doctrine\Common\Annotations\Reader;
 use Pgs\HashIdBundle\Exception\InvalidControllerException;

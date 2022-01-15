@@ -1,6 +1,6 @@
 <?php
 
-namespace Pgs\HashIdBundle\Exception;
+namespace Techgrid\HashIdBundle\Exception;
 
 interface Exception
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\ParametersProcessor\Converter;
+namespace Techgrid\HashIdBundle\ParametersProcessor\Converter;
 
 use Hashids\HashidsInterface;
 

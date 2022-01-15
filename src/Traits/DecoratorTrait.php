@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\Traits;
+namespace Techgrid\HashIdBundle\Traits;
 
 use BadMethodCallException;
 

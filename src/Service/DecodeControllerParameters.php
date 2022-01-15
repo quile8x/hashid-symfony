@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\Service;
+namespace Techgrid\HashIdBundle\Service;
 
-use Pgs\HashIdBundle\ParametersProcessor\Factory\DecodeParametersProcessorFactory;
-use Pgs\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
+use Techgrid\HashIdBundle\ParametersProcessor\Factory\DecodeParametersProcessorFactory;
+use Techgrid\HashIdBundle\ParametersProcessor\ParametersProcessorInterface;
 use Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 

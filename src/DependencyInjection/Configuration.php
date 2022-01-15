@@ -1,6 +1,6 @@
 <?php
 
-namespace Pgs\HashIdBundle\DependencyInjection;
+namespace Techgrid\HashIdBundle\DependencyInjection;
 
 use Hashids\Hashids;
 use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;

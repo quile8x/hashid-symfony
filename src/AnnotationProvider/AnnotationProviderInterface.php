@@ -1,6 +1,6 @@
 <?php
 
-namespace Pgs\HashIdBundle\AnnotationProvider;
+namespace Techgrid\HashIdBundle\AnnotationProvider;
 
 interface AnnotationProviderInterface
 {

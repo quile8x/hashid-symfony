@@ -1,13 +1,13 @@
 <?php
 
-namespace Pgs\HashIdBundle;
+namespace Techgrid\HashIdBundle;
 
-use Pgs\HashIdBundle\DependencyInjection\Compiler\EventSubscriberCompilerPass;
-use Pgs\HashIdBundle\DependencyInjection\Compiler\HashidsConverterCompilerPass;
+use Techgrid\HashIdBundle\DependencyInjection\Compiler\EventSubscriberCompilerPass;
+use Techgrid\HashIdBundle\DependencyInjection\Compiler\HashidsConverterCompilerPass;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class PgsHashIdBundle extends Bundle
+class TechgridHashIdBundle extends Bundle
 {
     public function build(ContainerBuilder $container): void
     {

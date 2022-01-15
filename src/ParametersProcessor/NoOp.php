@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\ParametersProcessor;
+namespace Techgrid\HashIdBundle\ParametersProcessor;
 
 class NoOp implements ParametersProcessorInterface
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Pgs\HashIdBundle\ParametersProcessor;
+namespace Techgrid\HashIdBundle\ParametersProcessor;
 
-use Pgs\HashIdBundle\ParametersProcessor\Converter\ConverterInterface;
+use Techgrid\HashIdBundle\ParametersProcessor\Converter\ConverterInterface;
 
 abstract class AbstractParametersProcessor implements ParametersProcessorInterface
 {

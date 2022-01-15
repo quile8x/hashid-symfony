@@ -1,8 +1,8 @@
 <?php
 
-namespace Pgs\HashIdBundle\EventSubscriber;
+namespace Techgrid\HashIdBundle\EventSubscriber;
 
-use Pgs\HashIdBundle\Service\DecodeControllerParameters;
+use Techgrid\HashIdBundle\Service\DecodeControllerParameters;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ControllerEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
