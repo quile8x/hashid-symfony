@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Techgrid\HashIdBundle\AnnotationProvider;
 
 use Doctrine\Common\Annotations\Reader;
-use Pgs\HashIdBundle\Exception\InvalidControllerException;
-use Pgs\HashIdBundle\Exception\MissingClassOrMethodException;
-use Pgs\HashIdBundle\Reflection\ReflectionProvider;
+use Techgrid\HashIdBundle\Exception\InvalidControllerException;
+use Techgrid\HashIdBundle\Exception\MissingClassOrMethodException;
+use Techgrid\HashIdBundle\Reflection\ReflectionProvider;
 
 class AnnotationProvider implements AnnotationProviderInterface
 {

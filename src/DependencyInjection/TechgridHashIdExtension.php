@@ -9,7 +9,7 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-class PgsHashIdExtension extends Extension
+class TechgridHashIdExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container): void
     {
@@ -24,7 +24,7 @@ class PgsHashIdExtension extends Extension
 
         foreach ($config[Configuration::NODE_CONVERTER] as $converter => $parameters) {
             foreach ($parameters as $parameter => $value) {
-                $container->setParameter(sprintf('pgs_hash_id.converter.%s.%s', $converter, $parameter), $value);
+                $container->setParameter(sprintf('techgrid_hash_id.converter.%s.%s', $converter, $parameter), $value);
             }
         }
 

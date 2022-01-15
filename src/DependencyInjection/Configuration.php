@@ -9,7 +9,7 @@ use Symfony\Component\Config\Definition\ConfigurationInterface;
 
 class Configuration implements ConfigurationInterface
 {
-    const ROOT_NAME = 'pgs_hash_id';
+    const ROOT_NAME = 'techgrid_hash_id';
 
     const NODE_CONVERTER = 'converter';
     const NODE_CONVERTER_HASHIDS = 'hashids';

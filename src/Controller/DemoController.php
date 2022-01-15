@@ -21,8 +21,8 @@ class DemoController extends AbstractController
     public function encode($id): Response
     {
         $other = 30;
-        $url1 = $this->generateUrl('pgs_hash_id_demo_decode', ['id' => $id, 'other' => $other]);
-        $url2 = $this->generateUrl('pgs_hash_id_demo_decode_more', ['id' => $id, 'other' => $other]);
+        $url1 = $this->generateUrl('techgrid_hash_id_demo_decode', ['id' => $id, 'other' => $other]);
+        $url2 = $this->generateUrl('techgrid_hash_id_demo_decode_more', ['id' => $id, 'other' => $other]);
 
         $response = <<<EOT
             <html>
@@ -62,8 +62,8 @@ EOT;
      */
     public function encodeLocalized($id): Response
     {
-        $url1 = $this->generateUrl('pgs_hash_id_demo_encode_localized', ['id' => $id, '_locale' => 'pl']);
-        $url2 = $this->generateUrl('pgs_hash_id_demo_encode_localized', ['id' => $id]);
+        $url1 = $this->generateUrl('techgrid_hash_id_demo_encode_localized', ['id' => $id, '_locale' => 'pl']);
+        $url2 = $this->generateUrl('techgrid_hash_id_demo_encode_localized', ['id' => $id]);
 
         $response = <<<EOT
             <html>

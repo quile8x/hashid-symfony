@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Techgrid\HashIdBundle\Decorator;
 
-use Pgs\HashIdBundle\ParametersProcessor\Factory\EncodeParametersProcessorFactory;
-use Pgs\HashIdBundle\Traits\DecoratorTrait;
+use Techgrid\HashIdBundle\ParametersProcessor\Factory\EncodeParametersProcessorFactory;
+use Techgrid\HashIdBundle\Traits\DecoratorTrait;
 use Symfony\Component\HttpKernel\CacheWarmer\WarmableInterface;
 use Symfony\Component\Routing\RequestContext;
 use Symfony\Component\Routing\Route;
