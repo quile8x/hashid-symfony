@@ -1,0 +1,19 @@
+pgs_hash_id_demo_encode:
+    path: /hash-id/demo/encode/{id}
+    controller: Pgs\HashIdBundle\Controller\DemoController::encode
+    requirements:
+      id: \d+
+
+pgs_hash_id_demo_decode:
+    path: /hash-id/demo/decode/{id}/{other}
+    controller: Pgs\HashIdBundle\Controller\DemoController::decode
+
+pgs_hash_id_demo_decode_more:
+    path: /hash-id/demo/decode_more/{id}/{other}
+    controller: Pgs\HashIdBundle\Controller\DemoController::decodeMore
+
+pgs_hash_id_demo_encode_localized:
+    path:
+        en: /hash-id/demo/encode-en/{id}
+        pl: /hash-id/demo/encode-pl/{id}
+    controller: Pgs\HashIdBundle\Controller\DemoController::encodeLocalized
